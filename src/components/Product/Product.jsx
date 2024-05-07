@@ -11,7 +11,7 @@ const Product = (props) => {
 
     return (
         <div className='product'>
-            <img src={img} alt="" />
+            <img src={img} alt="IMG NOT FOUND" />
             <div className='product-info'>
                 <h6 className='product-name'>{name}</h6>
                 <p>Price: ${price}</p>
@@ -21,7 +21,7 @@ const Product = (props) => {
             <button onClick={() => handleAddToCart(props.product)} className='btn-cart'>
                 Add to Cart
                 <FontAwesomeIcon icon={faShoppingCart} />
-                </button>
+            </button>
         </div>
     );
 };
